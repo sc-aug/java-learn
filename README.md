@@ -4,6 +4,8 @@ env: java 1.8.0
 
 ### Java Core
 #### Lambda Expression
+* Java 8 interface feature: default/static method
+  - [code][demo00]
 * Simple demo of functional interface.
   - [code][demo01] [code][demo02] [code][demo03]
 * Print the string which length <= 4 in a list.
@@ -33,6 +35,7 @@ env: java 1.8.0
 * Using **stream** with List, Set, Map, Array
   - [code][demo13]
 
+[demo00]: java-core/com/shichuan/java/lambda/LambdaDemo00Java8.java
 [demo01]: java-core/com/shichuan/java/lambda/LambdaDemo01.java
 [demo02]: java-core/com/shichuan/java/lambda/LambdaDemo02.java
 [demo03]: java-core/com/shichuan/java/lambda/LambdaDemo03.java
