@@ -1,4 +1,13 @@
-.DS_Store
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+.project
+.classpath
+factoryConfiguration.json
+
+### Eclipse ###
 
 .metadata
 bin/
@@ -23,9 +32,6 @@ local.properties
 
 # CDT-specific (C/C++ Development Tooling)
 .cproject
-
-# CDT- autotools 
-.autotools
 
 # Java annotation processor (APT)
 .factorypath
@@ -53,3 +59,32 @@ local.properties
 .scala_dependencies
 .worksheet
 
+### Eclipse Patch ###
+# Eclipse Core        
+
+# JDT-specific (Eclipse Java Development Tools)        
+
+# Annotation Processing
+.apt_generated
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
