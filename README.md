@@ -2,6 +2,48 @@ Java Practices
 ide: eclipse
 env: java 1.8.0
 
+### Java Core
+#### File IO
+
+#### Multithreading
+* [code][multi-demo00] [code][multi-demo01] [code][multi-demo02] Thread creation
+* [code][multi-demo03] `volatile` keyword (cpu cache / visibility of changes to variables across threads)
+* [code][multi-demo04] `synchronized` keyword on method (`join()`)
+* [code][multi-demo05] `synchronized` keyword on method
+* [code][multi-demo06] Unsynchronized example. 'synchronized method' not work on different objects
+* [code][multi-pc-demo01] Producer & Consumer, `synchronized` code block -- object lock. List size of 1
+* [code][multi-pc-demo02] Producer & Consumer, `synchronized` code block -- object lock. List size of N
+* [code][multi-pc-demo03] Producer & Consumer, thread save linked list
+* [code][multi-pc-demo04] Producer & Consumer, 2 threads add item to list, 2 threads remove item from list
+* [code][multi-pc-demo05] Unsynchronized Example. Lock on differet objects.
+* [code][multi-pc-demo06] 1 Chef (make food if table empty/block if customer eating) 1 Customer (eat food if food ready/block if food not ready) (Resource 1 table)
+* [code][multi-ex-demo00] class `Executor`, method `execute(Runnable)`
+* [code][multi-ex-demo01] class `ExecutorService`, method `execute(Runnable/Callable)`.
+* [code][multi-ex-demo02] Sum numbers. `ExecutorService` / `Runnable/Callable` / `Future`
+* [code][multi-cdl-demo00] CountDownLatch, Max Number
+* [code][multi-cdl-demo01] CountDownLatch, Sum Numbers
+* [code][multi-cb-demo00] CyclicBarrier
+
+[multi-demo00]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics00.java
+[multi-demo01]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics01.java
+[multi-demo02]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics02.java
+[multi-demo03]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics03Volatile.java
+[multi-demo04]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics04SyncMethod.java
+[multi-demo05]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics05SyncMethod.java
+[multi-demo06]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics06UnsyncExample.java
+[multi-pc-demo01]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread01ProdCons.java
+[multi-pc-demo02]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread02ProdCons.java
+[multi-pc-demo03]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread03ThreadSafeList.java
+[multi-pc-demo04]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread04ObjectLock.java
+[multi-pc-demo05]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread05UnsyncThread.java
+[multi-pc-demo06]: java-multithread/src/com/shichuan/java/multithread/prodcons/Multithread06ChefNCustomer
+[multi-ex-demo00]: java-multithread/src/com/shichuan/java/multithread/executor/MultithreadExecutorDemo00.java
+[multi-ex-demo01]: java-multithread/src/com/shichuan/java/multithread/executor/MultithreadExecutorDemo01.java
+[multi-ex-demo02]: java-multithread/src/com/shichuan/java/multithread/executor/MultithreadExecutorDemo02SumNum.java
+[multi-cdl-demo00]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCDL00MaxInput.java
+[multi-cdl-demo01]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCDL01SumNum.java
+[multi-cb-demo00]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCyclicBarrierDemo00.java
+
 
 ### Java 8
 #### Lambda Expression
