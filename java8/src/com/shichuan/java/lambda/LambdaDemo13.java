@@ -3,6 +3,9 @@ package com.shichuan.java.lambda;
 import java.util.*;
 import java.util.stream.Stream;
 
+/**
+ * Using stream with List, Set, Map, Array
+ */
 public class LambdaDemo13 {
 
 	public static void main(String[] args) {

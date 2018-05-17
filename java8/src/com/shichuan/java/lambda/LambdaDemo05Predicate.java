@@ -20,7 +20,7 @@ public class LambdaDemo05Predicate {
 		System.out.println(p.test(str));
 		
 		// Solution 2
-		Predicate<String> p2 = (String s) -> s.length() <= 4;
+		Predicate<String> p2 = s -> s.length() <= 4;
 		System.out.println(p2.test(str));
 	}
 	

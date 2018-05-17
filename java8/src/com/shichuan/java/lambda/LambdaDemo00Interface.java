@@ -16,7 +16,7 @@ interface I2 {
  * the static methods belongs to class/interface
  * the static methods can not be inherited
  */
-public class LambdaDemo00Java8 implements I1, I2 {
+public class LambdaDemo00Interface implements I1, I2 {
 	public static void main(String[] args) {
 		I1.test();
 		I2.test();
