@@ -5,6 +5,25 @@ env: java 1.8.0
 ### Java Core
 #### File IO
 
+### Java JDBC
+
+* MySQL setups [EmployeeDB][db-emp-sql] [Stored Procedure][db-emp-sp-sql]
+* MySQL setups [BookShelfDB][db-book-sql]
+* [code][jdbc-demo01] Statement
+* [code][jdbc-demo02] [code][jdbc-demo03] [code][jdbc-demo04] PreparedStatement Insert & Select & Update 
+* [code][jdbc-demo05] CallableStatement
+* [code][jdbc-demo06] [sql script][] Practice. Bookshelf CRUD operation
+
+[db-emp-sql]: java-jdbc/src/sql/db_employee/emp_db.sql
+[db-emp-sp-sql]: java-jdbc/src/sql/db_employee/sp_emp_db.sql
+[db-book-sql]: java-jdbc/src/sql/db_book/bookshelf_db.sql
+[jdbc-demo01]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC01Statement
+[jdbc-demo02]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC02PreparedStatementInsert.java
+[jdbc-demo03]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC03PreparedStatementSelect.java
+[jdbc-demo04]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC04PreparedStatementUpdate.java
+[jdbc-demo05]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC05CallableStatement.java
+[jdbc-demo06]: java-jdbc/src/com/shichuan/java/jdbc/practice/
+
 #### Multithreading
 * [code][multi-demo00] [code][multi-demo01] [code][multi-demo02] Thread creation
 * [code][multi-demo03] `volatile` keyword (cpu cache / visibility of changes to variables across threads)
