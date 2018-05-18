@@ -5,25 +5,6 @@ env: java 1.8.0
 ### Java Core
 #### File IO
 
-### Java JDBC
-
-* MySQL setups [EmployeeDB][db-emp-sql] [Stored Procedure][db-emp-sp-sql]
-* MySQL setups [BookShelfDB][db-book-sql]
-* [code][jdbc-demo01] Statement
-* [code][jdbc-demo02] [code][jdbc-demo03] [code][jdbc-demo04] PreparedStatement Insert & Select & Update 
-* [code][jdbc-demo05] CallableStatement
-* [code][jdbc-demo06] [sql script][] Practice. Bookshelf CRUD operation
-
-[db-emp-sql]: java-jdbc/src/sql/db_employee/emp_db.sql
-[db-emp-sp-sql]: java-jdbc/src/sql/db_employee/sp_emp_db.sql
-[db-book-sql]: java-jdbc/src/sql/db_book/bookshelf_db.sql
-[jdbc-demo01]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC01Statement
-[jdbc-demo02]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC02PreparedStatementInsert.java
-[jdbc-demo03]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC03PreparedStatementSelect.java
-[jdbc-demo04]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC04PreparedStatementUpdate.java
-[jdbc-demo05]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC05CallableStatement.java
-[jdbc-demo06]: java-jdbc/src/com/shichuan/java/jdbc/practice/
-
 #### Multithreading
 * [code][multi-demo00] [code][multi-demo01] [code][multi-demo02] Thread creation
 * [code][multi-demo03] `volatile` keyword (cpu cache / visibility of changes to variables across threads)
@@ -42,6 +23,9 @@ env: java 1.8.0
 * [code][multi-cdl-demo00] CountDownLatch, Max Number
 * [code][multi-cdl-demo01] CountDownLatch, Sum Numbers
 * [code][multi-cb-demo00] CyclicBarrier
+* [code][multi-philos00] Dining Philosopher: DeadLock. Semaphore
+* [code][multi-philos01] Dining Philosopher: Solve Deadlock, might have Starvation. Semaphore
+* [code][multi-philos02] Dining Philosopher: Solve Starvation. ReentrantLock - Fairness
 
 [multi-demo00]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics00.java
 [multi-demo01]: java-multithread/src/com/shichuan/java/multithread/basics/MultithreadBasics01.java
@@ -62,7 +46,27 @@ env: java 1.8.0
 [multi-cdl-demo00]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCDL00MaxInput.java
 [multi-cdl-demo01]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCDL01SumNum.java
 [multi-cb-demo00]: java-multithread/src/com/shichuan/java/multithread/cdl/MultithreadCyclicBarrierDemo00.java
+[multi-philos00]: java-multithread/src/com/shichuan/java/philosopher/DiningPhilosophersProblem00DeadLock.java
+[multi-philos01]: java-multithread/src/com/shichuan/java/philosopher/DiningPhilosophersProblem01Starvation.java
 
+### Java JDBC
+
+* MySQL setups [EmployeeDB][db-emp-sql] [Stored Procedure][db-emp-sp-sql]
+* MySQL setups [BookShelfDB][db-book-sql]
+* [code][jdbc-demo01] Statement
+* [code][jdbc-demo02] [code][jdbc-demo03] [code][jdbc-demo04] PreparedStatement Insert & Select & Update 
+* [code][jdbc-demo05] CallableStatement
+* [code][jdbc-demo06] [sql script][] Practice. Bookshelf CRUD operation
+
+[db-emp-sql]: java-jdbc/src/sql/db_employee/emp_db.sql
+[db-emp-sp-sql]: java-jdbc/src/sql/db_employee/sp_emp_db.sql
+[db-book-sql]: java-jdbc/src/sql/db_book/bookshelf_db.sql
+[jdbc-demo01]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC01Statement
+[jdbc-demo02]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC02PreparedStatementInsert.java
+[jdbc-demo03]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC03PreparedStatementSelect.java
+[jdbc-demo04]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC04PreparedStatementUpdate.java
+[jdbc-demo05]: java-jdbc/src/com/shichuan/java/jdbc/basics/JDBC05CallableStatement.java
+[jdbc-demo06]: java-jdbc/src/com/shichuan/java/jdbc/practice/
 
 ### Java 8
 #### Lambda Expression
@@ -95,3 +99,9 @@ env: java 1.8.0
 [lambda-demo12]: java8/src/com/shichuan/java/lambda/LambdaDemo12.java
 [lambda-demo13]: java8/src/com/shichuan/java/lambda/LambdaDemo13.java
 [lambda-demo14]: java8/src/com/shichuan/java/lambda/LambdaDemo14.java
+
+#### Stream API
+* [code][stream-demo15] Stream api [.filter .distinct(need equals) .collect] TreeSet[comparable]
+* [code][stream-demo16] And then
+[stream-demo01]: java8/src/com/shichuan/java/streamapi/LambdaDemo01.java
+[stream-demo02]: java8/src/com/shichuan/java/streamapi/LambdaDemo02.java
